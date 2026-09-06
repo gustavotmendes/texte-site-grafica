@@ -39,7 +39,7 @@
   <link href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@500,700,800&f[]=general-sans@400,500,600,700&display=swap" rel="stylesheet" />
 
   <!-- Preload hero -->
-  <link rel="preload" as="image" href="assets/img/hero.webp" />
+  <link rel="preload" as="image" href="assets/img/foto-principal.jpg" />
 
   <link rel="stylesheet" href="assets/css/style.css" />
 
@@ -55,11 +55,15 @@
     "telephone": "+5541996829483",
     "email": "grafilapa@grafilapa.com.br",
     "priceRange": "$$",
+    "foundingDate": "1999",
+    "taxID": "11.216.356/0001-83",
+    "legalName": "Grafilapa Gráfica e Editora",
     "address": {
       "@type": "PostalAddress",
       "streetAddress": "Av. Aluísio Leoni, 795",
       "addressLocality": "Lapa",
       "addressRegion": "PR",
+      "postalCode": "83759-000",
       "addressCountry": "BR"
     },
     "areaServed": {
@@ -126,10 +130,7 @@
           </div>
         </div>
         <div class="hero__media reveal">
-          <picture>
-            <source srcset="assets/img/hero.webp" type="image/webp" />
-            <img src="assets/img/hero.jpg" alt="Técnico operando impressora de grande formato produzindo um banner colorido em gráfica profissional" width="1536" height="1024" fetchpriority="high" />
-          </picture>
+          <img src="assets/img/foto-principal.jpg" alt="Técnico operando impressora de grande formato produzindo um banner colorido em gráfica profissional" width="1536" height="1024" fetchpriority="high" />
           <div class="hero__badge" aria-hidden="true">
             <strong>+25</strong>
             <span>anos de mercado</span>
@@ -144,7 +145,7 @@
         <div class="about__text reveal">
           <span class="eyebrow">Sobre a Grafilapa</span>
           <h2 class="section__title">Há mais de 25 anos ajudando empresas a se destacarem</h2>
-          <p>A Grafilapa atua há mais de 25 anos oferecendo soluções completas em impressão e comunicação visual para empresas e clientes da Lapa e região. Nosso compromisso é entregar materiais de alta qualidade, atendimento personalizado e resultados que valorizam a imagem do seu negócio.</p>
+          <p>Fundada em 1999, a Grafilapa atua há mais de 25 anos oferecendo soluções completas em impressão e comunicação visual para empresas e clientes da Lapa e região. Nosso compromisso é entregar materiais de alta qualidade, atendimento personalizado e resultados que valorizam a imagem do seu negócio.</p>
           <ul class="about__points" role="list">
             <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Produção própria do início ao fim</li>
             <li><svg class="ico-check" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6L9 17l-5-5"/></svg> Instalação profissional especializada</li>
@@ -152,7 +153,7 @@
           </ul>
         </div>
         <div class="about__stats reveal">
-          <div class="stat"><strong>25+</strong><span>anos de experiência</span></div>
+          <div class="stat"><strong>25+</strong><span>anos de experiência (desde 1999)</span></div>
           <div class="stat"><strong>100%</strong><span>produção própria</span></div>
           <div class="stat"><strong>+1.000</strong><span>projetos entregues</span></div>
           <div class="stat"><strong>Lapa</strong><span>e toda a região</span></div>
@@ -261,33 +262,35 @@
           <h2 class="section__title">Projetos que falam por si</h2>
           <p class="section__sub">Uma amostra do que produzimos e instalamos para clientes da Lapa e região.</p>
         </div>
+        <!-- TROCAR FOTOS: substitua os arquivos em assets/img/ mantendo os mesmos nomes.
+     Consulte COMO-ATUALIZAR.md na raiz do projeto. Atualize tambem o texto alt="..." de cada foto. -->
         <div class="gallery">
           <figure class="gallery__item gallery__item--wide reveal">
-            <picture><source srcset="assets/img/banner.webp" type="image/webp" /><img src="assets/img/banner.jpg" alt="Banner promocional de grande formato instalado na fachada de uma loja" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-1-banners.jpg" alt="Banner promocional de grande formato instalado na fachada de uma loja" loading="lazy" width="1000" height="666" />
             <figcaption>Banners instalados</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/fachada.webp" type="image/webp" /><img src="assets/img/fachada.jpg" alt="Fachada comercial moderna com letreiro iluminado" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-2-fachadas.jpg" alt="Fachada comercial moderna com letreiro iluminado" loading="lazy" width="1000" height="666" />
             <figcaption>Fachadas comerciais</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/envelopamento.webp" type="image/webp" /><img src="assets/img/envelopamento.jpg" alt="Veículo comercial totalmente envelopado em vinil azul e branco" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-3-envelopamento.jpg" alt="Veículo comercial totalmente envelopado em vinil azul e branco" loading="lazy" width="1000" height="666" />
             <figcaption>Envelopamento de veículos</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/vitrine.webp" type="image/webp" /><img src="assets/img/vitrine.jpg" alt="Vitrine de loja com adesivos aplicados em vidro" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-4-adesivos-vitrine.jpg" alt="Vitrine de loja com adesivos aplicados em vidro" loading="lazy" width="1000" height="666" />
             <figcaption>Adesivos para vitrines</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/pvc.webp" type="image/webp" /><img src="assets/img/pvc.jpg" alt="Placas em ACM e PVC impressas em alta qualidade" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-5-placas.jpg" alt="Placas em ACM e PVC impressas em alta qualidade" loading="lazy" width="1000" height="666" />
             <figcaption>Placas em ACM e PVC</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/corporativo.webp" type="image/webp" /><img src="assets/img/corporativo.jpg" alt="Ambiente corporativo com comunicação visual e letreiro em metal" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-6-comunicacao-visual.jpg" alt="Ambiente corporativo com comunicação visual e letreiro em metal" loading="lazy" width="1000" height="666" />
             <figcaption>Comunicação visual corporativa</figcaption>
           </figure>
           <figure class="gallery__item reveal">
-            <picture><source srcset="assets/img/graficos.webp" type="image/webp" /><img src="assets/img/graficos.jpg" alt="Materiais gráficos impressos: cartões de visita, flyers e folders" loading="lazy" width="1000" height="666" /></picture>
+            <img src="assets/img/galeria-7-materiais-graficos.jpg" alt="Materiais gráficos impressos: cartões de visita, flyers e folders" loading="lazy" width="1000" height="666" />
             <figcaption>Materiais gráficos</figcaption>
           </figure>
         </div>
@@ -331,30 +334,16 @@
       </div>
     </section>
 
-    <!-- ===== DEPOIMENTOS ===== -->
-    <section class="section" id="depoimentos">
+    <!-- ===== DEPOIMENTOS =====
+         Os depoimentos ficam no arquivo assets/js/depoimentos.js.
+         Enquanto a lista estiver vazia, esta seção não aparece no site. -->
+    <section class="section" id="depoimentos" hidden>
       <div class="container">
         <div class="section__head reveal">
           <span class="eyebrow">Depoimentos</span>
           <h2 class="section__title">O que nossos clientes dizem</h2>
         </div>
-        <div class="testimonials">
-          <figure class="testimonial reveal">
-            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <blockquote>"A fachada e os adesivos da nossa loja ficaram impecáveis. Atendimento atencioso e prazo cumprido direitinho. Virou referência aqui na região."</blockquote>
-            <figcaption><strong>Marcos Andrade</strong><span>Comércio Andrade, Lapa - PR</span></figcaption>
-          </figure>
-          <figure class="testimonial reveal">
-            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <blockquote>"Fizemos o envelopamento das mesas e a comunicação visual do restaurante. O resultado valorizou demais o ambiente. Recomendo de olhos fechados."</blockquote>
-            <figcaption><strong>Juliana Ferreira</strong><span>Cantina da Praça, Lapa - PR</span></figcaption>
-          </figure>
-          <figure class="testimonial reveal">
-            <div class="stars" aria-label="5 de 5 estrelas">★★★★★</div>
-            <blockquote>"As placas de vende-se e aluga-se da nossa imobiliária têm um acabamento profissional que faz diferença. Produção rápida e de muita qualidade."</blockquote>
-            <figcaption><strong>Rafael Bittencourt</strong><span>Imobiliária Centro Sul, região da Lapa</span></figcaption>
-          </figure>
-        </div>
+        <div class="testimonials" id="testimonials"></div>
       </div>
     </section>
 
@@ -415,7 +404,7 @@
           <ul class="contact__list" role="list">
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-              <span><strong>Endereço</strong>Av. Aluísio Leoni, 795 — Lapa, Paraná</span>
+              <span><strong>Endereço</strong>Av. Aluísio Leoni, 795 — Lapa, Paraná<br>CEP 83759-000</span>
             </li>
             <li>
               <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
@@ -429,7 +418,12 @@
               <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1"/></svg>
               <span><strong>Instagram</strong><a href="https://instagram.com/grafilapa" target="_blank" rel="noopener">@grafilapa</a></span>
             </li>
+            <li>
+              <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+              <span><strong>Horário de atendimento</strong>Segunda a sexta, das 8h às 18h</span>
+            </li>
           </ul>
+
         </div>
         <form class="contact__form reveal" id="contactForm" novalidate>
           <div class="field">
@@ -472,8 +466,14 @@
             <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.87 9.87 0 001.519 5.276l-.999 3.648 3.97-1.024zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
             Enviar pelo WhatsApp
           </button>
-          <p class="contact__note">Ao enviar, você será direcionado ao WhatsApp com a sua mensagem já preenchida.</p>
+          <p class="contact__note">Ao enviar, você será direcionado ao WhatsApp com a sua mensagem já preenchida. Seus dados são usados apenas para responder ao seu orçamento — veja nossa <a href="privacidade.html">Política de Privacidade</a>.</p>
         </form>
+      </div>
+      <div class="container map reveal">
+        <iframe
+          src="https://www.google.com/maps?q=Av.%20Alu%C3%ADsio%20Leoni%2C%20795%2C%20Lapa%20-%20PR%2C%2083759-000&output=embed"
+          title="Mapa com a localização da Grafilapa na Av. Aluísio Leoni, 795, Lapa - PR"
+          loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
       </div>
     </section>
   </main>
@@ -505,7 +505,7 @@
       <div class="footer__contact">
         <h3>Contato</h3>
         <ul role="list">
-          <li>Av. Aluísio Leoni, 795<br>Lapa - Paraná</li>
+          <li>Av. Aluísio Leoni, 795<br>Lapa - Paraná<br>CEP 83759-000</li>
           <li><a href="https://wa.me/5541996829483?text=Ol%C3%A1!%20Gostaria%20de%20solicitar%20um%20or%C3%A7amento." target="_blank" rel="noopener">WhatsApp:&nbsp;(41)&nbsp;99682-9483</a></li>
           <li><a href="mailto:grafilapa@grafilapa.com.br">grafilapa@grafilapa.com.br</a></li>
           <li><a href="https://instagram.com/grafilapa" target="_blank" rel="noopener">Instagram: @grafilapa</a></li>
@@ -514,7 +514,8 @@
     </div>
     <div class="footer__bottom">
       <div class="container">
-        <p>© <span id="ano"></span> Grafilapa — Gráfica e Comunicação Visual. Todos os direitos reservados.</p>
+        <p>Grafilapa Gráfica e Editora — CNPJ 11.216.356/0001-83<br>Av. Aluísio Leoni, 795 — Lapa/PR — CEP 83759-000</p>
+        <p>© <span id="ano"></span> Grafilapa — Gráfica e Comunicação Visual. Todos os direitos reservados. <a href="privacidade.html">Política de Privacidade</a></p>
       </div>
     </div>
   </footer>
@@ -524,6 +525,7 @@
     <svg viewBox="0 0 24 24" width="32" height="32" fill="currentColor" aria-hidden="true"><path d="M.057 24l1.687-6.163a11.867 11.867 0 01-1.587-5.945C.16 5.335 5.495 0 12.05 0a11.817 11.817 0 018.413 3.488 11.824 11.824 0 013.48 8.414c-.003 6.557-5.338 11.892-11.893 11.892a11.9 11.9 0 01-5.688-1.448L.057 24zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884a9.87 9.87 0 001.519 5.276l-.999 3.648 3.97-1.024zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
   </a>
 
+  <script src="assets/js/depoimentos.js"></script>
   <script src="assets/js/main.js" defer></script>
 <script data-pplx-inline-edit>
 (function () {

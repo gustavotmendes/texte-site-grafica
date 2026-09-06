@@ -123,3 +123,44 @@
   window.addEventListener('scroll', update, { passive: true });
   window.addEventListener('resize', update);
 })();
+
+/* ===== DEPOIMENTOS: renderiza a partir de assets/js/depoimentos.js ===== */
+(function () {
+  var secao = document.getElementById('depoimentos');
+  var alvo = document.getElementById('testimonials');
+  if (!secao || !alvo) return;
+  var lista = (typeof DEPOIMENTOS !== 'undefined' && Array.isArray(DEPOIMENTOS)) ? DEPOIMENTOS : [];
+  lista = lista.filter(function (d) { return d && d.texto && String(d.texto).trim(); });
+  if (!lista.length) { secao.hidden = true; return; }
+
+  function esc(s) {
+    return String(s == null ? '' : s)
+      .replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  }
+
+  alvo.innerHTML = lista.map(function (d) {
+    var n = Math.max(1, Math.min(5, parseInt(d.estrelas, 10) || 5));
+    var estrelas = '★★★★★'.slice(0, n);
+    var empresa = d.empresa ? '<span>' + esc(d.empresa) + '</span>' : '';
+    return '<figure class="testimonial reveal">' +
+      '<div class="stars" aria-label="' + n + ' de 5 estrelas">' + estrelas + '</div>' +
+      '<blockquote>&ldquo;' + esc(d.texto) + '&rdquo;</blockquote>' +
+      '<figcaption><strong>' + esc(d.nome || '') + '</strong>' + empresa + '</figcaption>' +
+      '</figure>';
+  }).join('');
+
+  secao.hidden = false;
+
+  // reativa a animacao de entrada nos cards recem-criados
+  if ('IntersectionObserver' in window) {
+    var obs = new IntersectionObserver(function (entradas) {
+      entradas.forEach(function (e) {
+        if (e.isIntersecting) { e.target.classList.add('is-visible'); obs.unobserve(e.target); }
+      });
+    }, { threshold: 0.15 });
+    alvo.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+  } else {
+    alvo.querySelectorAll('.reveal').forEach(function (el) { el.classList.add('is-visible'); });
+  }
+})();
